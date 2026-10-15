@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head><meta charset="UTF-8">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+
+	<!-- This site is optimized with the Yoast SEO plugin v28.7 - https://yoast.com/product/yoast-seo-wordpress/ -->
+	<title>Low-Poly Barrel in Blender: Step-by-Step Tutorial</title>
+	<meta name="description" content="Learn to model a low-poly barrel in Blender with this step-by-step game asset tutorial. Create clean geometry and prepare your model for game development.">
+	<link rel="canonical" href="/tutorials/low-poly-barrel-blender/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="article">
+	<meta property="og:title" content="Low-Poly Barrel in Blender: Step-by-Step Tutorial">
+	<meta property="og:description" content="Learn to model a low-poly barrel in Blender with this step-by-step game asset tutorial. Create clean geometry and prepare your model for game development.">
+	<meta property="og:url" content="/tutorials/low-poly-barrel-blender/">
+	<meta property="og:site_name" content="GameAssetLab">
+	<meta property="article:modified_time" content="2026-10-15T17:45:57+00:00">
+	<meta property="og:image" content="/wp-content/uploads/2026/10/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538.png">
+	<meta property="og:image:width" content="1254">
+	<meta property="og:image:height" content="1254">
+	<meta property="og:image:type" content="image/png">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:label1" content="Est. reading time">
+	<meta name="twitter:data1" content="8 minutes">
+	<script type="application/ld+json" class="yoast-schema-graph">{
+	    "@context": "https:\/\/schema.org",
+	    "@graph": [
+	        {
+	            "@type": "WebPage",
+	            "@id": "\/tutorials\/low-poly-barrel-blender\/",
+	            "url": "\/tutorials\/low-poly-barrel-blender\/",
+	            "name": "Low-Poly Barrel in Blender: Step-by-Step Tutorial",
+	            "isPartOf": {
+	                "@id": "\/#website"
+	            },
+	            "primaryImageOfPage": {
+	                "@id": "\/tutorials\/low-poly-barrel-blender\/#primaryimage"
+	            },
+	            "image": {
+	                "@id": "\/tutorials\/low-poly-barrel-blender\/#primaryimage"
+	            },
+	            "thumbnailUrl": "\/wp-content\/uploads\/2026\/10\/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538.png",
+	            "datePublished": "2026-10-15T14:00:28+00:00",
+	            "dateModified": "2026-10-15T17:45:57+00:00",
+	            "description": "Learn to model a low-poly barrel in Blender with this step-by-step game asset tutorial. Create clean geometry and prepare your model for game development.",
+	            "breadcrumb": {
+	                "@id": "\/tutorials\/low-poly-barrel-blender\/#breadcrumb"
+	            },
+	            "inLanguage": "en-US",
+	            "potentialAction": [
+	                {
+	                    "@type": "ReadAction",
+	                    "target": [
+	                        "\/tutorials\/low-poly-barrel-blender\/"
+	                    ]
+	                }
+	            ]
+	        },
+	        {
+	            "@type": "ImageObject",
+	            "inLanguage": "en-US",
+	            "@id": "\/tutorials\/low-poly-barrel-blender\/#primaryimage",
+	            "url": "\/wp-content\/uploads\/2026\/10\/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538.png",
+	            "contentUrl": "\/wp-content\/uploads\/2026\/10\/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538.png",
+	            "width": 1254,
+	            "height": 1254
+	        },
+	        {
+	            "@type": "BreadcrumbList",
+	            "@id": "\/tutorials\/low-poly-barrel-blender\/#breadcrumb",
+	            "itemListElement": [
+	                {
+	                    "@type": "ListItem",
+	                    "position": 1,
+	                    "name": "Home",
+	                    "item": "\/"
+	                },
+	                {
+	                    "@type": "ListItem",
+	                    "position": 2,
+	                    "name": "Low-Poly Barrel in Blender: A Step-by-Step Tutorial"
+	                }
+	            ]
+	        },
+	        {
+	            "@type": "WebSite",
+	            "@id": "\/#website",
+	            "url": "\/",
+	            "name": "GameAssetLab",
+	            "description": "",
+	            "potentialAction": [
+	                {
+	                    "@type": "SearchAction",
+	                    "target": {
+	                        "@type": "EntryPoint",
+	                        "urlTemplate": "\/?s={search_term_string}"
+	                    },
+	                    "query-input": {
+	                        "@type": "PropertyValueSpecification",
+	                        "valueRequired": true,
+	                        "valueName": "search_term_string"
+	                    }
+	                }
+	            ],
+	            "inLanguage": "en-US"
+	        }
+	    ]
+	}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+
+<link rel="dns-prefetch" href="//fonts.googleapis.com">
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="wp-block-library-inline-css">
+:root{--wp-block-synced-color:#7a00df;--wp-block-synced-color--rgb:122,0,223;--wp-bound-block-color:var(--wp-block-synced-color);--wp-editor-canvas-background:#ddd;--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,160.5;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}:root .has-text-align-center{text-align:center}:root .has-text-align-left{text-align:left}:root .has-text-align-right{text-align:right}.has-fit-text{white-space:nowrap!important}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{word-wrap:normal!important;border:0;clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-break:normal!important}.screen-reader-text:focus{background-color:#ddd;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style^=border-color],[style*=";border-color"],[style*="; border-color"]){border-style:solid}html :where([style^=border-top-color],[style*=";border-top-color"],[style*="; border-top-color"]){border-top-style:solid}html :where([style^=border-right-color],[style*=";border-right-color"],[style*="; border-right-color"]){border-right-style:solid}html :where([style^=border-bottom-color],[style*=";border-bottom-color"],[style*="; border-bottom-color"]){border-bottom-style:solid}html :where([style^=border-left-color],[style*=";border-left-color"],[style*="; border-left-color"]){border-left-style:solid}html :where([style^=border-width],[style*=";border-width"],[style*="; border-width"]){border-style:solid}html :where([style^=border-top-width],[style*=";border-top-width"],[style*="; border-top-width"]){border-top-style:solid}html :where([style^=border-right-width],[style*=";border-right-width"],[style*="; border-right-width"]){border-right-style:solid}html :where([style^=border-bottom-width],[style*=";border-bottom-width"],[style*="; border-bottom-width"]){border-bottom-style:solid}html :where([style^=border-left-width],[style*=";border-left-width"],[style*="; border-left-width"]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}:where(figure){margin:0 0 1em}html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:var(--wp-admin--admin-bar--height,0px)}@media screen and (max-width:600px){html :where(.is-position-sticky){--wp-admin--admin-bar--position-offset:0px}}
+
+/*# sourceURL=/wp-includes/css/dist/block-library/common.min.css */
+</style>
+<style id="wp-block-heading-inline-css">
+h1:where(.wp-block-heading).has-background,h2:where(.wp-block-heading).has-background,h3:where(.wp-block-heading).has-background,h4:where(.wp-block-heading).has-background,h5:where(.wp-block-heading).has-background,h6:where(.wp-block-heading).has-background{padding:1.25em 2.375em}h1.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h1.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h2.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h2.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h3.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h3.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h4.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h4.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h5.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h5.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]),h6.has-text-align-left[style*=writing-mode]:where([style*=vertical-lr]),h6.has-text-align-right[style*=writing-mode]:where([style*=vertical-rl]){rotate:180deg}
+/*# sourceURL=/wp-includes/blocks/heading/style.min.css */
+</style>
+<style id="wp-block-latest-comments-inline-css">
+:where(.wp-block-latest-comments){padding-left:0}ol.wp-block-latest-comments{box-sizing:border-box;margin-left:0}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment)){line-height:1.1}:where(.wp-block-latest-comments:not([style*=line-height] .wp-block-latest-comments__comment-excerpt p)){line-height:1.8}.has-dates :where(.wp-block-latest-comments:not([style*=line-height])),.has-excerpts :where(.wp-block-latest-comments:not([style*=line-height])){line-height:1.5}.wp-block-latest-comments__comment{list-style:none;margin-bottom:1em}.has-avatars .wp-block-latest-comments__comment{list-style:none;min-height:2.25em}.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-excerpt,.has-avatars .wp-block-latest-comments__comment .wp-block-latest-comments__comment-meta{margin-left:3.25em}.wp-block-latest-comments__comment-excerpt p{font-size:.875em;margin:.36em 0 1.4em}.wp-block-latest-comments__comment-date{display:block;font-size:.75em}.wp-block-latest-comments .avatar,.wp-block-latest-comments__comment-avatar{border-radius:1.5em;display:block;float:left;height:2.5em;margin-right:.75em;width:2.5em}.wp-block-latest-comments[class*=-font-size] a,.wp-block-latest-comments[style*=font-size] a{font-size:inherit}
+/*# sourceURL=/wp-includes/blocks/latest-comments/style.min.css */
+</style>
+<style id="wp-block-latest-posts-inline-css">
+.wp-block-latest-posts{box-sizing:border-box}.wp-block-latest-posts.alignleft{margin-right:2em}.wp-block-latest-posts.alignright{margin-left:2em}.wp-block-latest-posts.wp-block-latest-posts__list{list-style:none}.wp-block-latest-posts.wp-block-latest-posts__list li{clear:both;overflow-wrap:break-word}.wp-block-latest-posts.is-grid:not(.is-layout-grid){display:flex;flex-wrap:wrap}.wp-block-latest-posts.is-grid:not(.is-layout-grid) li{margin:0 1.25em 1.25em 0;width:100%}@media (min-width:600px){.wp-block-latest-posts.columns-2:not(.is-layout-grid) li{width:calc(50% - .625em)}.wp-block-latest-posts.columns-2:not(.is-layout-grid) li:nth-child(2n){margin-right:0}.wp-block-latest-posts.columns-3:not(.is-layout-grid) li{width:calc(33.33333% - .83333em)}.wp-block-latest-posts.columns-3:not(.is-layout-grid) li:nth-child(3n){margin-right:0}.wp-block-latest-posts.columns-4:not(.is-layout-grid) li{width:calc(25% - .9375em)}.wp-block-latest-posts.columns-4:not(.is-layout-grid) li:nth-child(4n){margin-right:0}.wp-block-latest-posts.columns-5:not(.is-layout-grid) li{width:calc(20% - 1em)}.wp-block-latest-posts.columns-5:not(.is-layout-grid) li:nth-child(5n){margin-right:0}.wp-block-latest-posts.columns-6:not(.is-layout-grid) li{width:calc(16.66667% - 1.04167em)}.wp-block-latest-posts.columns-6:not(.is-layout-grid) li:nth-child(6n){margin-right:0}}@media (max-width:600px){.wp-block-latest-posts-is-layout-grid[class*=columns-]:not(.has-native-responsive-grid){grid-template-columns:1fr}}:root :where(.wp-block-latest-posts.is-grid){padding:0}:root :where(.wp-block-latest-posts.wp-block-latest-posts__list){padding-left:0}.wp-block-latest-posts__post-author,.wp-block-latest-posts__post-date{display:block;font-size:.8125em}.wp-block-latest-posts__post-excerpt,.wp-block-latest-posts__post-full-content{margin-bottom:1em;margin-top:.5em}.wp-block-latest-posts__featured-image a{display:inline-block}.wp-block-latest-posts__featured-image img{height:auto;max-width:100%;width:auto}.wp-block-latest-posts__featured-image.alignleft{float:left;margin-right:1em}.wp-block-latest-posts__featured-image.alignright{float:right;margin-left:1em}.wp-block-latest-posts__featured-image.aligncenter{margin-bottom:1em;text-align:center}
+/*# sourceURL=/wp-includes/blocks/latest-posts/style.min.css */
+</style>
+<style id="wp-block-search-inline-css">
+.wp-block-search__button{margin-left:10px;word-break:normal}.wp-block-search__button.has-icon{line-height:0}.wp-block-search__button svg{fill:currentColor;height:1.25em;min-height:24px;min-width:24px;vertical-align:text-bottom;width:1.25em}:where(.wp-block-search__button){border:1px solid #ccc;padding:6px 10px}.wp-block-search__inside-wrapper{display:flex;flex:auto;flex-wrap:nowrap;max-width:100%}.wp-block-search__label{width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__button{box-sizing:border-box;display:flex;flex-shrink:0;justify-content:center;margin-left:0;max-width:100%}.wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{min-width:0!important;transition-property:width}.wp-block-search.wp-block-search__button-only .wp-block-search__input{flex-basis:100%;transition-duration:.3s}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden,.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__inside-wrapper{overflow:hidden}.wp-block-search.wp-block-search__button-only.wp-block-search__searchfield-hidden .wp-block-search__input{border-left-width:0!important;border-right-width:0!important;flex-basis:0;flex-grow:0;margin:0;min-width:0!important;padding-left:0!important;padding-right:0!important;width:0!important}:where(.wp-block-search__input){-webkit-appearance:initial;-moz-appearance:initial;appearance:none;border:1px solid #949494;flex-grow:1;font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;letter-spacing:inherit;line-height:inherit;margin-left:0;margin-right:0;min-width:3rem;padding:8px;text-decoration:unset!important;text-transform:inherit}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper){background-color:#fff;border:1px solid #949494;box-sizing:border-box;padding:4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input{border:none;border-radius:0;padding:0 4px}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) .wp-block-search__input:focus{outline:none}:where(.wp-block-search__button-inside .wp-block-search__inside-wrapper) :where(.wp-block-search__button){padding:4px 8px}.wp-block-search.aligncenter .wp-block-search__inside-wrapper{margin:auto}.wp-block[data-align=right] .wp-block-search.wp-block-search__button-only .wp-block-search__inside-wrapper{float:right}
+/*# sourceURL=/wp-includes/blocks/search/style.min.css */
+</style>
+<style id="wp-block-group-inline-css">
+.wp-block-group{box-sizing:border-box}:where(.wp-block-group.wp-block-group-is-layout-constrained){position:relative}
+/*# sourceURL=/wp-includes/blocks/group/style.min.css */
+</style>
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-latest-posts.is-layout-flex){gap: 1.25em;}:where(.wp-block-latest-posts.is-layout-grid){gap: 1.25em;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel="stylesheet" id="gal-fonts-css" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..900;1,9..144,300..900&amp;family=Inter:wght@400;500;600&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" media="all">
+<link rel="stylesheet" id="gameassetlab-style-css" href="/wp-content/themes/gameassetlab-theme/style.css?ver=1.0.0" media="all">
+<link rel="stylesheet" id="gameassetlab-components-css" href="/wp-content/themes/gameassetlab-theme/assets/css/components.css?ver=1.0.0" media="all">
+</head>
+<body class="wp-singular tutorial-template-default single single-tutorial postid-17 wp-embed-responsive wp-theme-gameassetlab-theme">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="reading-progress" id="reading-progress" role="progressbar" aria-label="Reading progress"></div>
+
+<header class="site-header" role="banner">
+	<div class="site-header__inner">
+
+		<!-- Logo -->
+		<a href="/" class="site-logo" rel="home" aria-label="GameAssetLab â€” home">
+			<div class="site-logo__mark" aria-hidden="true">G</div>
+			<span class="site-logo__text">Game<span>Asset</span>Lab</span>
+		</a>
+
+		<!-- Primary Navigation -->
+		<nav class="site-nav" id="site-nav" role="navigation" aria-label="Primary">
+			<a href="/tutorials/" class="site-nav__link site-nav__link--cta">Tutorials</a><a href="/tutorial-category/low-poly-modeling/" class="site-nav__link">Low-Poly Modeling</a><a href="/tutorial-category/uv-texturing/" class="site-nav__link">UV &amp; Texturing</a><a href="/tutorial-category/engine-export/" class="site-nav__link">Engine Export</a><a href="/about/" class="site-nav__link">About</a>		</nav>
+
+		<div class="flex" style="gap:0.5rem; align-items:center;">
+			<!-- Search toggle -->
+			<button class="header-search-btn" id="search-toggle" aria-label="Open search" aria-expanded="false" aria-controls="header-search">
+				<svg width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" focusable="false">
+					<circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path>
+				</svg>
+			</button>
+
+			<!-- Mobile toggle -->
+			<button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+				<span></span><span></span><span></span>
+			</button>
+		</div>
+
+	</div><!-- /.site-header__inner -->
+
+	<!-- Search overlay -->
+	<div class="header-search-overlay" id="header-search" role="search" aria-label="Site search">
+		<form method="get" action="/">
+			<label for="header-search-input" class="sr-only">Search tutorials</label>
+			<input type="search" id="header-search-input" name="s" placeholder="Search tutorials, topics, or stepsâ€¦" autocomplete="off" value="">
+		</form>
+	</div>
+</header>
+
+<p id="breadcrumbs"><span><span><a href="/">Home</a></span> » <span class="breadcrumb_last" aria-current="page">Low-Poly Barrel in Blender: A Step-by-Step Tutorial</span></span></p>
+<main id="main" tabindex="-1">
+
+	<!-- Reading progress bar is in header; updated by JS -->
+
+	<!-- Article header -->
+	<div class="cat-hero" style="padding-block: var(--space-12);">
+		<div class="cat-hero__inner">
+			<nav class="breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="/">Home</a></li><li><a href="/tutorial-category/low-poly-modeling/">Low-Poly Modeling</a></li><li aria-current="page">Low-Poly Barrel in Blender: A Step-by-Step Tutorial</li></ol></nav>			<div style="display:flex; gap:var(--space-3); flex-wrap:wrap; margin-bottom:var(--space-5); margin-top:var(--space-3);">
+									<span class="tag tag-dark">Low-Poly Modeling</span>
+								<span class="tag tag-beginner">Beginner</span>
+							</div>
+			<h1 style="font-family:var(--font-display); font-size:var(--text-3xl); color:var(--color-paper); letter-spacing:-0.02em; line-height:1.15; max-width:22ch; margin-bottom:var(--space-4);">
+				Low-Poly Barrel in Blender: A Step-by-Step Tutorial			</h1>
+					</div>
+	</div>
+
+	<!-- Featured image -->
+		<div style="background:var(--color-surface); max-height:480px; overflow:hidden;">
+		<div class="container" style="padding-block:0;">
+			<img width="1200" height="675" src="/wp-content/uploads/2026/10/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538-1200x675.png" class="attachment-gal-featured size-gal-featured wp-post-image" alt="Low-Poly Barrel in Blender: A Step-by-Step Tutorial" loading="eager" style="width:100%; border-radius:0 0 var(--radius-lg) var(--radius-lg);" decoding="async" fetchpriority="high" srcset="/wp-content/uploads/2026/10/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538-1200x675.png 1200w, /wp-content/uploads/2026/10/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538-800x450.png 800w, /wp-content/uploads/2026/10/3d307510-b7cb-4a9d-a9ac-dbb7bd14b538-400x225.png 400w" sizes="(max-width: 1200px) 100vw, 1200px">		</div>
+	</div>
+	
+	<!-- Article body + sidebar -->
+	<div class="article-page">
+
+		<!-- Main content -->
+		<article class="article-content">
+
+			<!-- Prerequisites block -->
+			
+			<!-- Article meta -->
+			<div class="article-meta">
+				<time datetime="2026-10-15T14:00:28+00:00">
+					Published 15 October 2026				</time>
+									<span>· Updated 15 October 2026</span>
+								<span>·</span>
+				<span>GameAssetLab</span>
+			</div>
+
+			<!-- Article body -->
+			<div class="article-body">
+				<h2>What you will make</h2>
+<p>By the end of this tutorial, you will have a low-poly barrel mesh ready for UV unwrapping and texturing. It will have clean geometry, appropriate edge loops to hold its shape, and a polygon count low enough to work well as a game prop.</p>
+<p>The barrel in this tutorial has roughly 200–300 faces. That is a reasonable starting point for an environmental prop in a low-poly game. Once you understand the construction, you can apply the same approach to crates, oil drums, water towers, and similar props.</p>
+<h2>Before you start</h2>
+<p>You need Blender installed. This tutorial was written and tested against Blender 4.2 LTS, which is available free from <a href="https://www.blender.org/download/">blender.org</a>. The steps will work in any recent 4.x release.</p>
+<p>You should be comfortable with:</p>
+<ul>
+<li>Navigating the viewport using middle-mouse drag (orbit), scroll wheel (zoom), and Shift + middle-mouse (pan)</li>
+<li>Switching between Object Mode and Edit Mode using Tab</li>
+<li>Selecting mesh elements with left-click</li>
+</ul>
+<p>You do not need to know UV unwrapping or materials. Those come in the next tutorial.</p>
+<h2>Why low-poly?</h2>
+<p>&quot;Low-poly&quot; refers to meshes that use a relatively small number of polygons. In real-time game engines, every polygon has a cost: the GPU must process each one every frame. Props that appear dozens of times in a scene — barrels, crates, rocks — need to be efficient.</p>
+<p>A barrel silhouette can be read clearly with 12–16 sides on its cylinder. Adding more sides does not make the barrel look noticeably rounder in a low-poly art style, but it does increase the vertex count and make UV unwrapping harder. This tutorial uses 12 sides.</p>
+<h2>Step 1 — Delete the default cube and add a cylinder</h2>
+<p>Open Blender. The default scene contains a cube, a light, and a camera. Press A to select everything, then X and Enter to delete.</p>
+<p>Press Shift + A to open the Add menu. Go to Mesh → Cylinder.</p>
+<p>At the bottom left of the viewport, you will see an <strong>Add Cylinder</strong> panel. Open it and set:</p>
+<ul>
+<li><strong>Vertices:</strong> 12</li>
+<li><strong>Radius:</strong> 0.4</li>
+<li><strong>Depth:</strong> 0.8</li>
+<li><strong>Cap Fill Type:</strong> N-Gon</li>
+</ul>
+<p>Press Tab to enter Edit Mode. You should see a cylindrical mesh with 12 sides and two flat caps.</p>
+<p><strong>Why 12 sides?</strong> At game distances, 12 sides reads as a rounded barrel without looking jagged. More sides means more geometry to unwrap later. Fewer sides starts to look noticeably polygonal. 12 is a practical default for this type of prop.</p>
+<h2>Step 2 — Scale the barrel to a realistic size</h2>
+<p>In Object Mode (press Tab to return), press S, then Z, then 1.5 and Enter. This stretches the barrel along the Z axis, making it taller than wide — closer to the proportions of a real wooden barrel.</p>
+<p>Check the Dimensions panel (N key to open the right sidebar, then the Item tab). Your barrel should be approximately 0.8 m wide and 1.2 m tall. These are real-world Blender units, and they matter: Blender's default unit is the metre, so keeping proportions realistic means less scale correction when you export to Unity later.</p>
+<h2>Step 3 — Add loop cuts for the barrel's middle bulge</h2>
+<p>Barrels are wider in the middle. To create this shape, you need horizontal edge loops.</p>
+<p>Press Tab to enter Edit Mode. Press Ctrl + R to activate the Loop Cut tool. Move your mouse over the side of the cylinder — a yellow horizontal line should appear around the cylinder's circumference. Left-click to confirm the loop, then right-click or press Escape to place it exactly at the midpoint without sliding. This creates an edge loop around the middle of the barrel.</p>
+<p>Add two more loop cuts: one about one-quarter of the way from the top, and one about one-quarter from the bottom. You now have three horizontal loops dividing the barrel's sides.</p>
+<p>Select the middle loop (Alt + click to select an entire loop). Press S, then X (or Y), then 1.2 and Enter to scale it outward slightly. This creates the barrel's characteristic bulge. Adjust the amount until it looks natural — 1.15 to 1.25 is usually about right.</p>
+<h2>Step 4 — Inset the top and bottom caps</h2>
+<p>The barrel's caps need a rim — a flat band at the top and bottom edge. This is also where you add the edge loops that prevent the top from looking flat.</p>
+<p>In Edit Mode, select the top face (the N-Gon). Press I to inset. Move the mouse inward slightly and left-click to confirm an inset of about 0.05 units. This creates a thin ring of faces around the top edge and a smaller face inside.</p>
+<p>Repeat for the bottom cap.</p>
+<p><strong>Why inset?</strong> Without this, the top and bottom edges will look too sharp when the model is shaded smooth. The inset gives you a bevel-like transition that reads well at game distances.</p>
+<h2>Step 5 — Add bevel to the top and bottom edges</h2>
+<p>Select the edge loop that runs around the top rim (Alt + click). Hold Shift and also select the bottom rim edge loop.</p>
+<p>Press Ctrl + B to activate Bevel. Move the mouse to create a small bevel — about 0.02 to 0.04 units. Scroll the mouse wheel to add one segment. Press Enter to confirm.</p>
+<p>This softens the hard edge at the barrel's shoulders without adding a lot of geometry to the sides. In a low-poly game, visible hard edges on rounded shapes tend to draw the eye in the wrong way.</p>
+<h2>Step 6 — Add the barrel bands (hoops)</h2>
+<p>Traditional wooden barrels have metal bands around them. You can suggest these with additional edge loops rather than separate geometry.</p>
+<p>Add two more horizontal loops near the top third and bottom third of the barrel. Select these loops and scale them outward by 1.02 — just enough to create a slight bulge that reads as a metal band from a distance.</p>
+<p>This is an example of a modeling shortcut: instead of modeling the actual metal band as a separate object, you suggest its presence by manipulating the existing geometry. For a low-poly game prop, this is usually sufficient.</p>
+<h2>Step 7 — Check your polygon count</h2>
+<p>Press M to view the mesh statistics. With the barrel selected in Object Mode, look at the status bar at the bottom of the Blender window or enable overlays → Statistics in Edit Mode.</p>
+<p>The barrel should have around 200–360 faces. If it has significantly more, check whether you added extra loop cuts accidentally or used too many bevel segments.</p>
+<p>A rough guide for barrel-type props:</p>
+<ul>
+<li><strong>&lt; 200 faces</strong> — very low-poly; silhouette may suffer</li>
+<li><strong>200–400 faces</strong> — appropriate for many low-poly games</li>
+<li><strong>400–800 faces</strong> — acceptable for hero props or close-camera environments</li>
+<li><strong>&gt; 800 faces</strong> — unusually high for a barrel; consider reducing</li>
+</ul>
+<h2>Step 8 — Apply smooth shading</h2>
+<p>In Object Mode, right-click the barrel and select <strong>Shade Smooth</strong>. Then open the Object Data Properties (the green triangle icon in the Properties panel) and find Auto Smooth. Enable it and set the angle to 30°.</p>
+<p>This tells Blender to shade faces that meet at angles below 30° smoothly, and to leave sharper angles hard. The result is a barrel that looks rounded on the sides but maintains clean, visible edges at the rims and bands.</p>
+<p><strong>What went wrong?</strong> If the top and bottom caps look dark or shaded incorrectly, check whether the face normals are all pointing outward. In Edit Mode with overlays enabled, you can display normals (Viewport Overlay → Normals). If any face normals point inward (shown as a short line pointing into the mesh), select those faces and press Alt + N → Flip.</p>
+<h2>Step 9 — Common mistakes and how to fix them</h2>
+<p><strong>The barrel looks blocky at the middle.</strong></p>
+<p>You scaled the loop cut too aggressively, or placed it at the wrong height. Select the middle loop and try a smaller scale value (1.1 instead of 1.2).</p>
+<p><strong>The top and bottom faces shade incorrectly.</strong></p>
+<p>Check for internal faces or overlapping vertices. In Edit Mode, press M → Merge by Distance to clean up doubles, then recalculate normals with Shift + N.</p>
+<p><strong>The bevel on the rim added too many segments.</strong></p>
+<p>Undo with Ctrl + Z, redo the bevel, and use the scroll wheel to set segments to 1. One segment is usually enough for a low-poly asset.</p>
+<p><strong>The barrel is floating above the ground in Unity later.</strong></p>
+<p>This usually means the object's origin is not at the base. In Object Mode, right-click the barrel and choose <strong>Set Origin → Origin to Geometry</strong>, or select <strong>Object → Set Origin → Origin to Geometry</strong> from the header menu. To place the origin at the base specifically, move the 3D cursor to the barrel's base (Shift + right-click), then use <strong>Object → Set Origin → Origin to 3D Cursor</strong>.</p>
+<h2>Step 10 — How to know the result is correct</h2>
+<p>Your barrel should:</p>
+<ul>
+<li>Have 12 sides visible when viewed from the top</li>
+<li>Be wider in the middle than at the top and bottom</li>
+<li>Have visible rim details at the top and bottom caps</li>
+<li>Show clean, uninterrupted loops when viewed in Wireframe mode (Z key)</li>
+<li>Have approximately 200–360 faces</li>
+<li>Shade smoothly across the sides with hard edges at the rims</li>
+</ul>
+<p>If all of these are true, the geometry is ready for UV unwrapping.</p>
+<h2>What comes next</h2>
+<p>The barrel you just built needs UV coordinates before you can apply textures to it properly. UV unwrapping maps the 3D surface of the barrel onto a flat 2D space, which is what texture images use.</p>
+<p>The next tutorial in this series — <a href="/tutorials/uv-texturing/blender-uv-unwrapping-game-asset/">UV Unwrapping a Game Asset in Blender</a> — continues with this same barrel mesh and explains seams, UV islands, and how to pack the layout efficiently.</p>
+<h2>External references</h2>
+<ul>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/mesh/edges/loop_cut_slide.html">Blender Manual: Loop Cut and Slide</a></li>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/mesh/editing/edge/bevel.html">Blender Manual: Bevel</a></li>
+<li><a href="https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html">Blender Manual: Face Normals</a></li>
+</ul>
+			</div>
+
+			<!-- Tags -->
+						<div style="display:flex; gap:var(--space-2); flex-wrap:wrap; margin-top:var(--space-8); padding-top:var(--space-6); border-top:1px solid var(--color-border-light);">
+				<span class="text-muted text-sm">Filed under:</span>
+				<a href="/tutorial-category/low-poly-modeling/" class="tag tag-outline">Low-Poly Modeling</a> 			</div>
+			
+			<!-- Next tutorial recommendation -->
+							<a href="/tutorials/blender-uv-unwrapping-game-asset/" class="next-tutorial">
+					<div>
+						<p class="next-tutorial__label">Continue the workflow →</p>
+						<h3 class="next-tutorial__title">UV Unwrapping a Game Asset in Blender</h3>
+						<p style="color:rgba(244,241,236,0.55); font-size:var(--text-sm);">After this tutorial, you will be able to: Place seams on a 3D mesh so that it unfolds…</p>
+					</div>
+					<span class="next-tutorial__arrow" aria-hidden="true">→</span>
+				</a>
+			
+		</article>
+
+		<!-- Sidebar -->
+		<aside class="article-sidebar" role="complementary" aria-label="Tutorial sidebar">
+
+			<!-- Table of Contents (JS-generated) -->
+			<nav class="toc" id="toc" aria-label="Table of contents">
+				<p class="toc__title">In this tutorial</p>
+				<ol id="toc-list">
+					<!-- Populated by JavaScript from h2/h3 headings -->
+				</ol>
+			</nav>
+
+			<!-- Tutorial details -->
+			<div style="margin-top:var(--space-6); background:var(--color-paper-dark); border:1px solid var(--color-border-light); border-radius:var(--radius-md); padding:var(--space-5);">
+				<p style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--color-ink-40); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-4);">Tutorial info</p>
+				<dl style="display:grid; gap:var(--space-3);">
+										<div>
+						<dt style="font-size:var(--text-xs); color:var(--color-ink-40); text-transform:uppercase; letter-spacing:0.06em;">Level</dt>
+						<dd style="font-weight:600; font-size:var(--text-sm);">Beginner</dd>
+					</div>
+																			</dl>
+			</div>
+
+			<!-- Related tutorials widget area -->
+							<div style="margin-top:var(--space-6);">
+					<div class="widget widget_block widget_search"><form role="search" method="get" action="/" class="wp-block-search__button-outside wp-block-search__text-button wp-block-search"><label class="wp-block-search__label" for="wp-block-search__input-1">Search</label><div class="wp-block-search__inside-wrapper"><input class="wp-block-search__input" id="wp-block-search__input-1" placeholder="" value="" type="search" name="s" required><button aria-label="Search" class="wp-block-search__button wp-element-button" type="submit">Search</button></div></form></div><div class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Posts</h2><ul class="wp-block-latest-posts__list wp-block-latest-posts is-layout-flow wp-block-latest-posts-is-layout-flow"><li><a class="wp-block-latest-posts__post-title" href="/hello-world/">Hello world!</a></li>
+</ul></div></div></div><div class="widget widget_block"><div class="wp-block-group"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow"><h2 class="wp-block-heading">Recent Comments</h2><ol class="wp-block-latest-comments"><li class="wp-block-latest-comments__comment"><article><footer class="wp-block-latest-comments__comment-meta"><a class="wp-block-latest-comments__comment-author" href="https://wordpress.org/">A WordPress Commenter</a> on <a class="wp-block-latest-comments__comment-link" href="/hello-world/#comment-1">Hello world!</a></footer></article></li></ol></div></div></div>				</div>
+			
+		</aside>
+	</div><!-- /.article-page -->
+
+</main>
+
+﻿
+<footer class="site-footer" role="contentinfo">
+	<div class="site-footer__top">
+
+		<!-- Brand column -->
+		<div class="footer-brand">
+			<a href="/" class="site-logo" rel="home" aria-label="GameAssetLab â€” home">
+				<div class="site-logo__mark" aria-hidden="true">G</div>
+				<span class="site-logo__text">Game<span>Asset</span>Lab</span>
+			</a>
+			<p class="footer-brand__desc">
+				Step-by-step Blender tutorials for making low-poly props, UV maps, textures, and optimized assets for real-time game engines.
+			</p>
+		</div>
+
+		<!-- Tutorials column -->
+		<div class="footer-col">
+			<h4 class="footer-col__heading">Tutorials</h4>
+			<ul>
+				<li><a href="/tutorials/">All Tutorials</a></li>
+				<li><a href="/tutorial-category/low-poly-modeling/">Low-Poly Modeling</a></li>
+				<li><a href="/tutorial-category/uv-texturing/">UV Mapping &amp; Texturing</a></li>
+				<li><a href="/tutorial-category/engine-export/">Game Engine Export</a></li>
+			</ul>
+		</div>
+
+		<!-- Resources column -->
+		<div class="footer-col">
+			<h4 class="footer-col__heading">Resources</h4>
+			<ul>
+				<li><a href="https://docs.blender.org/" target="_blank" rel="noopener noreferrer">Blender Manual</a></li>
+				<li><a href="https://docs.unity3d.com/Manual/index.html" target="_blank" rel="noopener noreferrer">Unity Documentation</a></li>
+				<li><a href="https://www.blender.org/" target="_blank" rel="noopener noreferrer">Blender.org</a></li>
+			</ul>
+		</div>
+
+		<!-- Site column -->
+		<div class="footer-col">
+			<h4 class="footer-col__heading">Site</h4>
+			<ul>
+				<li><a href="/about/">About</a></li>
+				<li><a href="/sitemap.xml">Sitemap</a></li>
+							</ul>
+		</div>
+
+	</div><!-- /.site-footer__top -->
+
+	<div class="site-footer__bottom">
+		<p>
+			© 2026 GameAssetLab.
+			Built for learners making game-ready 3D assets.		</p>
+		<nav class="footer-legal" aria-label="Legal">
+						<a href="/sitemap.xml">Sitemap</a>
+		</nav>
+	</div><!-- /.site-footer__bottom -->
+
+</footer>
+
+<script type="speculationrules">
+{"prefetch":[{"source":"document","where":{"and":[{"href_matches":"/*"},{"not":{"href_matches":["/wp-*.php","/wp-admin/*","/wp-content/uploads/*","/wp-content/*","/wp-content/plugins/*","/wp-content/themes/gameassetlab-theme/*","/*\\?(.+)"]}},{"not":{"selector_matches":"a[rel~=\"nofollow\"]"}},{"not":{"selector_matches":".no-prefetch, .no-prefetch a"}}]},"eagerness":"conservative"}]}
+</script>
+<script id="gameassetlab-main-js-extra">
+var galData = {"ajaxUrl":"/wp-admin/admin-ajax.php","nonce":"1cc3f652be","searchUrl":"/search/","siteUrl":"https://gameassetlab.me"};
+//# sourceURL=gameassetlab-main-js-extra
+</script>
+<script data-wp-strategy="defer" defer id="gameassetlab-main-js" src="/wp-content/themes/gameassetlab-theme/assets/js/main.js?ver=1.0.0"></script>
+<script id="wp-emoji-settings" type="application/json">
+{"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"/wp-includes/js/wp-emoji-release.min.js?ver=7.1.3"}}
+</script>
+<script type="module">
+/*! This file is auto-generated */
+var e="script#wp-emoji-settings",t=document.querySelector(e);if(!(t instanceof HTMLScriptElement))throw new Error("Element missing: "+e);const r=JSON.parse(t.text),s=(window._wpemojiSettings=r,"wpEmojiSettingsSupports"),o=["flag","emoji"];function i(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(s,JSON.stringify(t))}catch(e){}}function c(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0);const r=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data);return t.every((e,t)=>e===r[t])}function p(e,t){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var n=e.getImageData(16,16,1,1);for(let e=0;e<n.data.length;e++)if(0!==n.data[e])return!1;return!0}function u(e,t,n,r){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\udde8\ud83c\uddf6","\ud83c\udde8\u200b\ud83c\uddf6")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!r(e,"\ud83e\u1fac8")}return!1}function f(e,t,n,r){let a;const s=(a="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):document.createElement("canvas")).getContext("2d",{willReadFrequently:!0}),o=(s.textBaseline="top",s.font="600 32px Arial",{});return e.forEach(e=>{o[e]=t(s,e,n,r)}),o}function a(e){var t=document.createElement("script");t.src=e,t.defer=!0,document.head.appendChild(t)}r.supports={everything:!0,everythingExceptFlag:!0},new Promise(t=>{let n=function(){try{var e=JSON.parse(sessionStorage.getItem(s));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(o),u.toString(),c.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"});const a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=e=>{i(n=e.data),a.terminate(),t(n)})}catch(e){}i(n=f(o,u,c,p))}t(n)}).then(e=>{for(const n in e)r.supports[n]=e[n],r.supports.everything=r.supports.everything&&r.supports[n],"flag"!==n&&(r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&r.supports[n]);var t;r.supports.everythingExceptFlag=r.supports.everythingExceptFlag&&!r.supports.flag,r.supports.everything||((t=r.source||{}).concatemoji?a(t.concatemoji):t.wpemoji&&t.twemoji&&(a(t.twemoji),a(t.wpemoji)))});
+//# sourceURL=/wp-includes/js/wp-emoji-loader.min.js
+</script>
+</body>
+</html>

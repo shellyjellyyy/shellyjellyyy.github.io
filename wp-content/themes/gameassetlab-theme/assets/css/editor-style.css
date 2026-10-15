@@ -1,0 +1,70 @@
+/**
+ * GameAssetLab — WordPress Editor Styles
+ * Applied inside the block editor to match frontend appearance.
+ * @package GameAssetLab
+ */
+
+body.editor-styles-wrapper {
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #1a1a1a;
+  background: #f4f1ec;
+  max-width: 740px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.editor-styles-wrapper h1,
+.editor-styles-wrapper h2,
+.editor-styles-wrapper h3,
+.editor-styles-wrapper h4 {
+  font-family: 'Fraunces', Georgia, serif;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: #1a1a1a;
+}
+
+.editor-styles-wrapper h2 {
+  font-size: 1.953rem;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.editor-styles-wrapper h3 {
+  font-size: 1.563rem;
+  margin-top: 2.5rem;
+}
+
+.editor-styles-wrapper p { max-width: 68ch; }
+
+.editor-styles-wrapper pre,
+.editor-styles-wrapper code {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.88em;
+  background: #ede9e2;
+  padding: 0.1em 0.4em;
+  border-radius: 3px;
+}
+
+.editor-styles-wrapper pre {
+  background: #1a1a1a;
+  color: #f4f1ec;
+  padding: 1.5rem;
+  border-radius: 6px;
+  overflow-x: auto;
+}
+
+.editor-styles-wrapper pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+
+.editor-styles-wrapper blockquote {
+  border-left: 3px solid #b5cc1e;
+  padding-left: 1.5rem;
+  color: #555;
+  font-style: italic;
+}
