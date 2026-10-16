@@ -1494,3 +1494,48 @@ hr {
   a { color: inherit; text-decoration: underline; }
   .article-page { grid-template-columns: 1fr; }
 }
+
+
+/* GameAssetLab — editorial breadcrumb styling */
+#breadcrumbs,
+.breadcrumbs {
+    background: #191919 !important;
+    color: #929292 !important;
+    border: 0 !important;
+    border-bottom: 1px solid #303030 !important;
+    padding: 14px max(24px, calc((100% - 1120px) / 2)) !important;
+    margin: 0 !important;
+    font-size: 13px !important;
+    line-height: 1.6 !important;
+}
+
+#breadcrumbs a,
+.breadcrumbs a {
+    color: #aebd28 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease;
+}
+
+#breadcrumbs a:hover,
+.breadcrumbs a:hover {
+    color: #d0e72a !important;
+    text-decoration: underline !important;
+}
+
+#breadcrumbs .breadcrumb_last {
+    color: #f4f1ec !important;
+}
+
+.breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+    list-style: none;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.breadcrumbs li {
+    margin: 0 !important;
+}
