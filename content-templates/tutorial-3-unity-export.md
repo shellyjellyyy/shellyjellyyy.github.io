@@ -165,6 +165,6 @@ Browse the [Tutorials index](/tutorials/) to find more asset production guides.
 
 ## External references
 
-- [Blender Manual: FBX Export](https://docs.blender.org/manual/en/latest/addons/import_export/scene_fbx.html)
+- [Blender Manual: FBX Export](https://docs.blender.org/manual/en/5.0/addons/import_export/scene_fbx.html)
 - [Unity Manual: Importing a Model](https://docs.unity3d.com/Manual/ImportingModelFiles.html)
 - [Unity Manual: Model Import Settings - Model Tab](https://docs.unity3d.com/Manual/FBXImporter-Model.html)

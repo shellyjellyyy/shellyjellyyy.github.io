@@ -157,4 +157,4 @@ The [Blender to Unity FBX tutorial](/tutorials/game-engine-export/blender-to-uni
 
 - [Blender Manual: UV Unwrapping](https://docs.blender.org/manual/en/latest/editors/uv/index.html)
 - [Blender Manual: Mark Seam](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/uv.html#seams)
-- [Blender Manual: Pack Islands](https://docs.blender.org/manual/en/latest/editors/uv/editing/layout.html)
+- [Blender Manual: Pack Islands](https://docs.blender.org/manual/en/4.5/modeling/meshes/uv/editing.html)

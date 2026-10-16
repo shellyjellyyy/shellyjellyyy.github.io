@@ -170,6 +170,6 @@ The next tutorial in this series - [UV Unwrapping a Game Asset in Blender](/tuto
 
 ## External references
 
-- [Blender Manual: Loop Cut and Slide](https://docs.blender.org/manual/en/latest/modeling/mesh/edges/loop_cut_slide.html)
-- [Blender Manual: Bevel](https://docs.blender.org/manual/en/latest/modeling/mesh/editing/edge/bevel.html)
+- [Blender Manual: Loop Cut and Slide](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/loopcut_slide.html)
+- [Blender Manual: Bevel](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/edge/bevel.html)
 - [Blender Manual: Face Normals](https://docs.blender.org/manual/en/latest/modeling/meshes/editing/mesh/normals.html)
