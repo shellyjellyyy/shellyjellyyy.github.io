@@ -3,6 +3,6 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://gameassetlab.me/sitemap_index.xml
+Sitemap: http://localhost:8881/sitemap_index.xml
 # ---------------------------
 # END YOAST BLOCK
