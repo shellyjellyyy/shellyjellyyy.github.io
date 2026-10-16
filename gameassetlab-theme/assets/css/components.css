@@ -1,0 +1,359 @@
+/* ==========================================================================
+   GameAssetLab — Additional CSS: Pagination, Print, Extras
+   Appended to main style.css at build time or loaded separately.
+   ========================================================================== */
+
+/* ==========================================================================
+   PAGINATION
+   ========================================================================== */
+
+.pagination {
+  margin-top: var(--space-12);
+  padding-top: var(--space-8);
+  border-top: 1px solid var(--color-border-light);
+}
+
+.pagination__list {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.pagination__item a,
+.pagination__item span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 36px;
+  height: 36px;
+  padding: 0 var(--space-3);
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  text-decoration: none;
+  color: var(--color-ink-60);
+  transition: background var(--duration), border-color var(--duration), color var(--duration);
+}
+
+.pagination__item a:hover {
+  background: var(--color-paper-dark);
+  border-color: var(--color-ink-20);
+  color: var(--color-ink);
+}
+
+.pagination__item span.current {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-paper);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   WIDGET STYLES
+   ========================================================================== */
+
+.widget {
+  margin-bottom: var(--space-8);
+}
+
+.widget__title {
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-ink-40);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border-light);
+}
+
+.widget ul {
+  list-style: none;
+  padding: 0;
+}
+
+.widget li {
+  margin-bottom: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.widget a {
+  color: var(--color-ink-60);
+  text-decoration: none;
+  transition: color var(--duration);
+}
+
+.widget a:hover { color: var(--color-ink); }
+
+/* ==========================================================================
+   ARTICLE BODY — ENHANCED TABLE STYLES
+   ========================================================================== */
+
+.article-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: var(--space-8);
+  font-size: var(--text-sm);
+}
+
+.article-body th,
+.article-body td {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border-light);
+  text-align: left;
+  vertical-align: top;
+}
+
+.article-body th {
+  background: var(--color-paper-dark);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.article-body tr:nth-child(even) td {
+  background: rgba(0,0,0,0.02);
+}
+
+/* ==========================================================================
+   KEYBOARD SHORTCUT DISPLAY
+   ========================================================================== */
+
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.82em;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  padding: 0.15em 0.45em;
+  border-radius: var(--radius-sm);
+  border: 1px solid rgba(255,255,255,0.15);
+  box-shadow: 0 2px 0 rgba(0,0,0,0.3);
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   FIGURE / IMAGE CAPTION
+   ========================================================================== */
+
+figure {
+  margin-block: var(--space-8);
+}
+
+figcaption {
+  margin-top: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-ink-40);
+  font-style: italic;
+  text-align: center;
+}
+
+/* ==========================================================================
+   VIDEO EMBED
+   ========================================================================== */
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  margin-block: var(--space-8);
+  background: var(--color-surface);
+}
+
+.video-wrapper iframe,
+.video-wrapper video {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: 0;
+}
+
+/* ==========================================================================
+   BEFORE/AFTER COMPARISON COMPONENT
+   ========================================================================== */
+
+.comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4);
+  margin-block: var(--space-8);
+}
+
+.comparison__panel {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  position: relative;
+}
+
+.comparison__label {
+  position: absolute;
+  top: var(--space-3);
+  left: var(--space-3);
+  background: rgba(0,0,0,0.7);
+  color: var(--color-paper);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  padding: 0.2em 0.6em;
+  border-radius: var(--radius-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.comparison img {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 600px) {
+  .comparison { grid-template-columns: 1fr; }
+}
+
+/* ==========================================================================
+   TROUBLESHOOTING ACCORDION
+   ========================================================================== */
+
+.troubleshoot {
+  border: 1px solid var(--color-border-light);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  margin-block: var(--space-8);
+}
+
+.troubleshoot__item {
+  border-bottom: 1px solid var(--color-border-light);
+}
+.troubleshoot__item:last-child { border-bottom: none; }
+
+.troubleshoot__trigger {
+  width: 100%;
+  padding: var(--space-5) var(--space-6);
+  background: var(--color-white);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: background var(--duration);
+  color: var(--color-ink);
+}
+
+.troubleshoot__trigger:hover { background: var(--color-paper-dark); }
+.troubleshoot__trigger[aria-expanded="true"] { background: var(--color-paper-dark); }
+
+.troubleshoot__icon {
+  flex-shrink: 0;
+  transition: transform var(--duration);
+  color: var(--color-ink-40);
+}
+.troubleshoot__trigger[aria-expanded="true"] .troubleshoot__icon {
+  transform: rotate(180deg);
+}
+
+.troubleshoot__content {
+  padding: 0 var(--space-6) var(--space-5);
+  background: var(--color-paper-dark);
+  font-size: var(--text-sm);
+  color: var(--color-ink-60);
+  line-height: 1.7;
+  display: none;
+}
+.troubleshoot__content.is-open { display: block; }
+
+/* ==========================================================================
+   MOBILE REFINEMENTS
+   ========================================================================== */
+
+@media (max-width: 600px) {
+  .hero { padding-block: var(--space-16) var(--space-12); }
+  .hero__title { font-size: clamp(2.2rem, 8vw, 3rem); }
+  .hero__meta { gap: var(--space-6); flex-wrap: wrap; }
+  .section { padding-block: var(--space-12); }
+  .article-page { padding-block: var(--space-8); }
+  .next-tutorial { flex-direction: column; }
+  .next-tutorial__arrow { align-self: flex-start; }
+  .site-footer__top { padding-block: var(--space-10); }
+}
+
+@media (max-width: 480px) {
+  :root {
+    --space-20: 3rem;
+    --space-24: 4rem;
+  }
+  h1 { font-size: var(--text-2xl); }
+  h2 { font-size: var(--text-xl); }
+  .section-title { font-size: var(--text-xl); }
+}
+
+/* ==========================================================================
+   FOCUS VISIBLE GLOBAL IMPROVEMENTS
+   ========================================================================== */
+
+:focus { outline: none; }
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+  border-radius: var(--radius-sm);
+}
+
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
+}
+
+/* ==========================================================================
+   HIGH CONTRAST MODE SUPPORT
+   ========================================================================== */
+
+@media (forced-colors: active) {
+  .btn-primary { forced-color-adjust: none; }
+  .tag-accent  { border: 1px solid ButtonText; }
+  .site-logo__mark { forced-color-adjust: none; }
+  .category-card::after { display: none; }
+}
+
+/* ==========================================================================
+   DARK MODE (system preference — optional)
+   Note: the dark theme IS the default for the ink/paper split design.
+   This adds additional dark-mode support for light-background sections.
+   ========================================================================== */
+
+@media (prefers-color-scheme: dark) {
+  /* Already dark-first on hero, nav, footer — these refine light sections */
+  .tutorial-card {
+    background: #1e1e1e;
+    border-color: rgba(255,255,255,0.08);
+    color: var(--color-paper);
+  }
+  .tutorial-card__title { color: var(--color-paper); }
+  .tutorial-card__excerpt { color: rgba(244,241,236,0.55); }
+  .tutorial-card__footer { border-color: rgba(255,255,255,0.06); color: rgba(244,241,236,0.35); }
+
+  .filter-btn {
+    background: var(--color-surface);
+    border-color: var(--color-border);
+    color: rgba(244,241,236,0.6);
+  }
+  .filter-btn:hover {
+    border-color: rgba(255,255,255,0.3);
+    color: var(--color-paper);
+  }
+  .filter-btn.is-active {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    border-color: var(--color-paper);
+  }
+}

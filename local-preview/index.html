@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GameAssetLab - Blender Game Asset Tutorials (Local Preview)</title>
+<meta name="description" content="Step-by-step Blender tutorials for modeling low-poly props, unwrapping UVs, and exporting game-ready assets to Unity.">
+<meta name="robots" content="noindex"><!-- Local preview only -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../gameassetlab-theme/style.css">
+<link rel="stylesheet" href="../gameassetlab-theme/assets/css/components.css">
+<style>
+/* Local preview notice */
+.preview-notice {
+  position: fixed;
+  bottom: 1rem; right: 1rem;
+  background: #1a1a1a;
+  color: #b5cc1e;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 11px;
+  padding: 0.4em 0.8em;
+  border-radius: 4px;
+  border: 1px solid rgba(181,204,30,0.3);
+  z-index: 9999;
+  letter-spacing: 0.05em;
+}
+</style>
+</head>
+<body class="home">
+
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="reading-progress" id="reading-progress"></div>
+
+<!-- HEADER -->
+<header class="site-header" role="banner">
+  <div class="site-header__inner">
+    <a href="#" class="site-logo" aria-label="GameAssetLab - home">
+      <div class="site-logo__mark" aria-hidden="true">G</div>
+      <span class="site-logo__text">Game<span>Asset</span>Lab</span>
+    </a>
+    <nav class="site-nav" id="site-nav" role="navigation" aria-label="Primary">
+      <a href="#tutorials" class="site-nav__link site-nav__link--cta">Tutorials</a>
+      <a href="#modeling" class="site-nav__link">Low-Poly Modeling</a>
+      <a href="#uv" class="site-nav__link">UV & Texturing</a>
+      <a href="#export" class="site-nav__link">Engine Export</a>
+      <a href="#about" class="site-nav__link">About</a>
+    </nav>
+    <div class="flex" style="gap:0.5rem; align-items:center;">
+      <button class="header-search-btn" id="search-toggle" aria-label="Open search" aria-expanded="false" aria-controls="header-search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      </button>
+      <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+  <div class="header-search-overlay" id="header-search" role="search" aria-label="Site search">
+    <form>
+      <label for="header-search-input" class="sr-only">Search tutorials</label>
+      <input type="search" id="header-search-input" placeholder="Search tutorials, topics, or steps…" autocomplete="off">
+    </form>
+  </div>
+</header>
+
+<!-- MAIN -->
+<main id="main" tabindex="-1">
+
+  <!-- HERO -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__inner">
+      <div class="hero__content">
+        <p class="hero__overline">Open-source 3D workflow - Blender to game engine</p>
+        <h1 class="hero__title" id="hero-title">
+          Make props<br>
+          <em>ready for games.</em>
+        </h1>
+        <p class="hero__subtitle">
+          Practical, step-by-step tutorials for modeling low-poly assets, unwrapping UVs, applying textures,
+          and exporting finished props into a real-time game engine - all in Blender.
+        </p>
+        <div class="hero__cta">
+          <a href="#tutorials" class="btn btn-primary btn-lg">Browse tutorials</a>
+          <a href="#barrel-tutorial" class="btn btn-ghost-light btn-lg">Start with the barrel →</a>
+        </div>
+        <div class="hero__meta" aria-label="Site overview">
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Focus</span>
+            <span class="hero__meta-value">Low-poly props</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Software</span>
+            <span class="hero__meta-value">Blender 4.x</span>
+          </div>
+          <div class="hero__meta-item">
+            <span class="hero__meta-label">Audience</span>
+            <span class="hero__meta-value">Beginners</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Asset stage visual -->
+      <div class="hero__visual" aria-hidden="true">
+        <div class="hero__asset-stages">
+          <div class="hero__stage-card">
+            <span class="hero__stage-label">01 - Model</span>
+            <div class="hero__stage-preview">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+                <rect width="200" height="150" fill="#242424"/>
+                <polygon points="100,20 160,130 40,130" fill="none" stroke="#555" stroke-width="1.5"/>
+                <polygon points="100,20 160,130 100,90" fill="#333" opacity="0.8"/>
+                <circle cx="100" cy="75" r="30" fill="none" stroke="#444" stroke-width="1" opacity="0.5"/>
+                <line x1="40" y1="130" x2="160" y2="130" stroke="#444" stroke-width="1"/>
+              </svg>
+            </div>
+          </div>
+          <div class="hero__stage-card">
+            <span class="hero__stage-label">02 - Wireframe</span>
+            <div class="hero__stage-preview">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+                <rect width="200" height="150" fill="#1a1f1a"/>
+                <polygon points="100,15 165,130 35,130" fill="none" stroke="#b5cc1e" stroke-width="1.2" opacity="0.8"/>
+                <line x1="100" y1="15" x2="100" y2="130" stroke="#b5cc1e" stroke-width="0.8" opacity="0.5"/>
+                <line x1="35" y1="130" x2="132.5" y2="72.5" stroke="#b5cc1e" stroke-width="0.8" opacity="0.5"/>
+                <line x1="165" y1="130" x2="67.5" y2="72.5" stroke="#b5cc1e" stroke-width="0.8" opacity="0.5"/>
+                <circle cx="100" cy="15" r="3" fill="#b5cc1e"/>
+                <circle cx="35" cy="130" r="3" fill="#b5cc1e"/>
+                <circle cx="165" cy="130" r="3" fill="#b5cc1e"/>
+              </svg>
+            </div>
+          </div>
+          <div class="hero__stage-card">
+            <span class="hero__stage-label">03 - UV Layout</span>
+            <div class="hero__stage-preview">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+                <rect width="200" height="150" fill="#1a1a2e"/>
+                <rect x="20" y="20" width="160" height="110" fill="none" stroke="#3a3a6a" stroke-width="1"/>
+                <rect x="30" y="30" width="60" height="90" fill="#2a2a5a" stroke="#6060cc" stroke-width="1" opacity="0.8"/>
+                <ellipse cx="130" cy="50" rx="35" ry="20" fill="#2a2a5a" stroke="#6060cc" stroke-width="1" opacity="0.8"/>
+                <ellipse cx="130" cy="115" rx="30" ry="18" fill="#252540" stroke="#6060cc" stroke-width="1" opacity="0.8"/>
+                <text x="100" y="145" text-anchor="middle" font-family="monospace" font-size="8" fill="#3a3a6a">UV SPACE 0–1</text>
+              </svg>
+            </div>
+          </div>
+          <div class="hero__stage-card">
+            <span class="hero__stage-label">04 - Textured</span>
+            <div class="hero__stage-preview">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 150" width="200" height="150">
+                <rect width="200" height="150" fill="#2a1a14"/>
+                <polygon points="100,20 155,115 45,115" fill="#6b3a1f" opacity="0.9"/>
+                <polygon points="100,20 155,115 100,80" fill="#8b4a25" opacity="0.9"/>
+                <polygon points="100,20 45,115 100,80" fill="#5a3018" opacity="0.9"/>
+                <polygon points="45,115 155,115 100,80" fill="#7a4020" opacity="0.9"/>
+                <polygon points="100,20 155,115 45,115" fill="none" stroke="#c4703a" stroke-width="0.8" opacity="0.5"/>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORKFLOW STRIP -->
+  <div class="workflow-strip" aria-label="Tutorial workflow overview">
+    <div class="workflow-strip__inner">
+      <a href="#modeling" class="workflow-step">
+        <div class="workflow-step__number" aria-hidden="true">01</div>
+        <div class="workflow-step__text">
+          <span class="workflow-step__name">Model the prop</span>
+          <span class="workflow-step__desc">Low-poly geometry in Blender</span>
+        </div>
+      </a>
+      <span class="workflow-arrow" aria-hidden="true">→</span>
+      <a href="#uv" class="workflow-step">
+        <div class="workflow-step__number" aria-hidden="true">02</div>
+        <div class="workflow-step__text">
+          <span class="workflow-step__name">Unwrap UVs</span>
+          <span class="workflow-step__desc">Seams, islands, and layout</span>
+        </div>
+      </a>
+      <span class="workflow-arrow" aria-hidden="true">→</span>
+      <a href="#uv" class="workflow-step">
+        <div class="workflow-step__number" aria-hidden="true">03</div>
+        <div class="workflow-step__text">
+          <span class="workflow-step__name">Apply textures</span>
+          <span class="workflow-step__desc">Materials, colour, roughness</span>
+        </div>
+      </a>
+      <span class="workflow-arrow" aria-hidden="true">→</span>
+      <a href="#export" class="workflow-step">
+        <div class="workflow-step__number" aria-hidden="true">04</div>
+        <div class="workflow-step__text">
+          <span class="workflow-step__name">Export to engine</span>
+          <span class="workflow-step__desc">FBX handoff to Unity</span>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <!-- CATEGORIES SECTION -->
+  <section class="section" id="tutorials" aria-labelledby="categories-heading">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-eyebrow">Learn by workflow stage</span>
+          <h2 class="section-title" id="categories-heading">Where do you want to start?</h2>
+        </div>
+        <a href="#all-tutorials" class="btn btn-outline">View all tutorials</a>
+      </div>
+      <div class="grid grid-3">
+        <a href="#modeling" class="category-card" id="modeling">
+          <div class="category-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b5cc1e" stroke-width="1.5"><path d="m12 2 9 4.5v9L12 20l-9-4.5v-9L12 2z"/><path d="m12 20v-9M3 6.5l9 4.5 9-4.5"/></svg>
+          </div>
+          <div>
+            <h3 class="category-card__title">Low-Poly Modeling</h3>
+            <p class="category-card__desc">Build props with clean, efficient geometry. Learn why keeping poly count low matters for real-time rendering, and how to model a barrel, crate, or rock from scratch.</p>
+          </div>
+          <div class="category-card__count">2 tutorials</div>
+          <span class="category-card__arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#uv" class="category-card" id="uv">
+          <div class="category-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b5cc1e" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+          </div>
+          <div>
+            <h3 class="category-card__title">UV Mapping & Texturing</h3>
+            <p class="category-card__desc">Understand seams, UV islands, and texel density. Practical unwrapping guides that show you how to lay out UVs so textures apply correctly when the prop reaches the engine.</p>
+          </div>
+          <div class="category-card__count">2 tutorials</div>
+          <span class="category-card__arrow" aria-hidden="true">→</span>
+        </a>
+        <a href="#export" class="category-card" id="export">
+          <div class="category-card__icon" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#b5cc1e" stroke-width="1.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+          </div>
+          <div>
+            <h3 class="category-card__title">Game Engine Export</h3>
+            <p class="category-card__desc">Transfer finished assets from Blender into Unity. Scale, orientation, materials, and common failure cases - the FBX handoff explained step by step.</p>
+          </div>
+          <div class="category-card__count">2 tutorials</div>
+          <span class="category-card__arrow" aria-hidden="true">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED TUTORIALS -->
+  <section class="section section--paper-dark" id="all-tutorials" aria-labelledby="featured-heading">
+    <div class="container">
+      <div class="section-header">
+        <div>
+          <span class="section-eyebrow">Start here</span>
+          <h2 class="section-title" id="featured-heading">Featured tutorials</h2>
+        </div>
+      </div>
+
+      <!-- Filter bar -->
+      <div class="filter-bar" role="group" aria-label="Filter tutorials by category">
+        <button class="filter-btn is-active" data-filter="all">All tutorials</button>
+        <button class="filter-btn" data-filter="low-poly-modeling">Low-Poly Modeling</button>
+        <button class="filter-btn" data-filter="uv-texturing">UV & Texturing</button>
+        <button class="filter-btn" data-filter="game-engine-export">Engine Export</button>
+      </div>
+
+      <div class="grid grid-3" id="tutorial-grid">
+        <div data-category="low-poly-modeling">
+          <a href="#barrel-tutorial" class="tutorial-card" id="barrel-tutorial">
+            <div class="tutorial-card__image">
+              <div class="tutorial-card__image-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" aria-hidden="true">
+                  <rect width="800" height="450" fill="#242424"/>
+                  <polygon points="0,450 200,180 400,300" fill="#2a2a2a" opacity="0.8"/>
+                  <polygon points="200,180 500,0 600,250" fill="#303030" opacity="0.9"/>
+                  <polygon points="400,300 700,200 800,450" fill="#1e1e1e" opacity="0.9"/>
+                  <polygon points="500,0 800,0 700,200" fill="#2e2e2e" opacity="0.8"/>
+                  <polygon points="0,0 500,0 200,180" fill="#282828" opacity="0.7"/>
+                  <polygon points="400,160 440,182 440,225 400,247 360,225 360,182" fill="none" stroke="#b5cc1e" stroke-width="1.5" opacity="0.5"/>
+                  <text x="400" y="260" text-anchor="middle" font-family="monospace" font-size="11" fill="#666" letter-spacing="2">LOW-POLY BARREL</text>
+                </svg>
+              </div>
+            </div>
+            <div class="tutorial-card__meta-bar">
+              <span class="tag tag-outline">Low-Poly Modeling</span>
+              <span class="tag tag-beginner">Beginner</span>
+            </div>
+            <div class="tutorial-card__body">
+              <h3 class="tutorial-card__title">Low-Poly Barrel in Blender: A Step-by-Step Tutorial</h3>
+              <p class="tutorial-card__excerpt">Model a game-ready barrel from scratch. Learn how to use cylinders, loop cuts, and basic Blender tools to produce clean, efficient geometry ready for UV unwrapping.</p>
+            </div>
+            <div class="tutorial-card__footer">
+              <span class="text-mono">Blender 4.2 LTS</span>
+              <span>45 min</span>
+            </div>
+          </a>
+        </div>
+
+        <div data-category="uv-texturing">
+          <a href="#uv-tutorial" class="tutorial-card" id="uv-tutorial">
+            <div class="tutorial-card__image">
+              <div class="tutorial-card__image-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" aria-hidden="true">
+                  <rect width="800" height="450" fill="#1a1a2e"/>
+                  <rect x="100" y="60" width="600" height="330" fill="none" stroke="#3a3a6a" stroke-width="1.5"/>
+                  <rect x="130" y="90" width="200" height="270" fill="#2a2a5a" stroke="#6060cc" stroke-width="1.2" opacity="0.8"/>
+                  <ellipse cx="530" cy="160" rx="130" ry="70" fill="#2a2a5a" stroke="#6060cc" stroke-width="1.2" opacity="0.8"/>
+                  <ellipse cx="530" cy="310" rx="115" ry="60" fill="#252540" stroke="#6060cc" stroke-width="1.2" opacity="0.8"/>
+                  <text x="400" y="430" text-anchor="middle" font-family="monospace" font-size="12" fill="#3a3a6a" letter-spacing="2">UV EDITOR - BARREL ISLANDS</text>
+                </svg>
+              </div>
+            </div>
+            <div class="tutorial-card__meta-bar">
+              <span class="tag tag-outline">UV & Texturing</span>
+              <span class="tag tag-beginner">Beginner</span>
+            </div>
+            <div class="tutorial-card__body">
+              <h3 class="tutorial-card__title">UV Unwrapping a Game Asset in Blender</h3>
+              <p class="tutorial-card__excerpt">Place seams on a low-poly prop, generate UV islands, and arrange the layout so textures map correctly. Practical guide using the barrel from the modeling series.</p>
+            </div>
+            <div class="tutorial-card__footer">
+              <span class="text-mono">Blender 4.2 LTS</span>
+              <span>40 min</span>
+            </div>
+          </a>
+        </div>
+
+        <div data-category="game-engine-export">
+          <a href="#export-tutorial" class="tutorial-card" id="export-tutorial">
+            <div class="tutorial-card__image">
+              <div class="tutorial-card__image-placeholder">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" aria-hidden="true">
+                  <rect width="800" height="450" fill="#1a1f1a"/>
+                  <rect x="80" y="60" width="280" height="330" rx="8" fill="#242424" stroke="#333" stroke-width="1.5"/>
+                  <text x="220" y="100" text-anchor="middle" font-family="monospace" font-size="12" fill="#666">BLENDER</text>
+                  <polygon points="170,200 270,200 220,160" fill="none" stroke="#b5cc1e" stroke-width="1.5" opacity="0.7"/>
+                  <rect x="440" y="60" width="280" height="330" rx="8" fill="#1a2a1a" stroke="#2a4a2a" stroke-width="1.5"/>
+                  <text x="580" y="100" text-anchor="middle" font-family="monospace" font-size="12" fill="#4a8a4a">UNITY</text>
+                  <polygon points="530,200 630,200 580,160" fill="none" stroke="#4a8a4a" stroke-width="1.5" opacity="0.7"/>
+                  <path d="M360,225 L440,225" stroke="#b5cc1e" stroke-width="2" marker-end="url(#arrow)"/>
+                  <text x="400" y="215" text-anchor="middle" font-family="monospace" font-size="10" fill="#b5cc1e">FBX</text>
+                  <text x="400" y="430" text-anchor="middle" font-family="monospace" font-size="11" fill="#3a3a2a" letter-spacing="2">BLENDER → UNITY HANDOFF</text>
+                </svg>
+              </div>
+            </div>
+            <div class="tutorial-card__meta-bar">
+              <span class="tag tag-outline">Engine Export</span>
+              <span class="tag tag-beginner">Beginner</span>
+            </div>
+            <div class="tutorial-card__body">
+              <h3 class="tutorial-card__title">Export Blender Assets to Unity: FBX Settings and Common Errors</h3>
+              <p class="tutorial-card__excerpt">The complete FBX export workflow: correct scale, axis orientation, material setup, and what to check when your asset lands in Unity for the first time.</p>
+            </div>
+            <div class="tutorial-card__footer">
+              <span class="text-mono">Blender 4.x + Unity LTS</span>
+              <span>35 min</span>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- Empty state (hidden by default) -->
+      <div class="empty-state" id="tutorials-empty" style="display:none;" role="status">
+        <div class="empty-state__icon" aria-hidden="true">◇</div>
+        <h3 class="empty-state__title">No tutorials in this category yet</h3>
+        <p class="empty-state__text">Try another filter or see all tutorials.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT TEASER -->
+  <section class="section section--dark" id="about" aria-labelledby="about-heading">
+    <div class="container">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:var(--space-16); align-items:center;">
+        <div>
+          <span class="section-eyebrow">The GameAssetLab approach</span>
+          <h2 class="section-title" id="about-heading" style="color:var(--color-paper)">
+            One prop. Four stages. A complete workflow.
+          </h2>
+          <p style="color:rgba(244,241,236,0.65); font-size:var(--text-md); line-height:1.7; margin-bottom:var(--space-6);">
+            Most tutorials show a technique in isolation. GameAssetLab connects the stages: you model a prop, unwrap its UVs, apply textures to it, and export that same prop into a game engine.
+          </p>
+          <p style="color:rgba(244,241,236,0.65); font-size:var(--text-md); line-height:1.7; margin-bottom:var(--space-8);">
+            The barrel you make in the modeling tutorial is the same one you UV-unwrap in the next guide. When you reach the export tutorial, you already understand what you are handing off.
+          </p>
+          <a href="#barrel-tutorial" class="btn btn-primary btn-lg">Start with the barrel tutorial</a>
+        </div>
+        <div>
+          <div style="background:var(--color-surface); border:1px solid var(--color-border); border-radius:var(--radius-lg); padding:var(--space-8);">
+            <p style="font-family:var(--font-mono); font-size:var(--text-xs); color:var(--color-ink-40); text-transform:uppercase; letter-spacing:0.1em; margin-bottom:var(--space-6);">Asset production checklist</p>
+            <ul class="checklist" aria-label="Asset production steps">
+              <li><span class="checklist__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span><span>Block out the prop shape with basic geometry</span></li>
+              <li><span class="checklist__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span><span>Keep polygon count appropriate for real-time use</span></li>
+              <li><span class="checklist__check" aria-hidden="true"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2"><polyline points="2 6 5 9 10 3"/></svg></span><span>Apply bevels and edge loops for silhouette</span></li>
+              <li><span class="checklist__check"></span><span>Place seams to minimize UV distortion</span></li>
+              <li><span class="checklist__check"></span><span>Pack UV islands to use texture space efficiently</span></li>
+              <li><span class="checklist__check"></span><span>Apply and preview materials in the viewport</span></li>
+              <li><span class="checklist__check"></span><span>Export FBX with correct scale and axis settings</span></li>
+              <li><span class="checklist__check"></span><span>Import into Unity and verify scale and materials</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="text-align:center; padding-block:var(--space-24);" aria-labelledby="cta-heading">
+    <div class="container--sm">
+      <span class="section-eyebrow">Free, no account required</span>
+      <h2 class="section-title" id="cta-heading" style="font-size:var(--text-3xl);">Pick a tutorial and start building.</h2>
+      <p style="font-size:var(--text-md); color:var(--color-ink-60); margin-block:var(--space-6) var(--space-8); max-width:52ch; margin-inline:auto;">
+        Every tutorial on GameAssetLab assumes you know how to open Blender. Nothing else. No paid tools, no premium access, no prerequisites beyond curiosity.
+      </p>
+      <div class="flex-center gap-4" style="flex-wrap:wrap;">
+        <a href="#modeling" class="btn btn-primary btn-lg">Low-poly modeling</a>
+        <a href="#uv" class="btn btn-outline btn-lg">UV & texturing</a>
+        <a href="#export" class="btn btn-outline btn-lg">Engine export</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo">
+  <div class="site-footer__top">
+    <div class="footer-brand">
+      <a href="#" class="site-logo" aria-label="GameAssetLab - home">
+        <div class="site-logo__mark" aria-hidden="true">G</div>
+        <span class="site-logo__text">Game<span>Asset</span>Lab</span>
+      </a>
+      <p class="footer-brand__desc">Step-by-step Blender tutorials for making low-poly props, UV maps, textures, and optimized assets for real-time game engines.</p>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col__heading">Tutorials</h4>
+      <ul>
+        <li><a href="#all-tutorials">All Tutorials</a></li>
+        <li><a href="#modeling">Low-Poly Modeling</a></li>
+        <li><a href="#uv">UV Mapping & Texturing</a></li>
+        <li><a href="#export">Game Engine Export</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col__heading">Resources</h4>
+      <ul>
+        <li><a href="https://docs.blender.org/" target="_blank" rel="noopener">Blender Manual</a></li>
+        <li><a href="https://docs.unity3d.com/Manual/index.html" target="_blank" rel="noopener">Unity Documentation</a></li>
+        <li><a href="https://www.blender.org/" target="_blank" rel="noopener">Blender.org</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4 class="footer-col__heading">Site</h4>
+      <ul>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="site-footer__bottom">
+    <p>&copy; 2026 GameAssetLab. Built for learners making game-ready 3D assets.</p>
+    <nav class="footer-legal" aria-label="Legal">
+      <span style="color:rgba(244,241,236,0.25); font-size:var(--text-xs);">CSET489 SEO Project - Bennett University, 2026–27</span>
+    </nav>
+  </div>
+</footer>
+
+<!-- Preview notice -->
+<div class="preview-notice" role="note">LOCAL PREVIEW - not WordPress</div>
+
+<script src="../gameassetlab-theme/assets/js/main.js" defer></script>
+<!-- Inline checklist init for preview (checked items) -->
+<script>
+document.querySelectorAll('.checklist li').forEach(function(li, i) {
+  if (i < 3) li.classList.add('is-checked');
+});
+</script>
+</body>
+</html>
