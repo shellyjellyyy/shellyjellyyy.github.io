@@ -1,11 +1,9 @@
 services:
   web:
-    image: nginx:alpine
+    build: .
     restart: unless-stopped
     ports:
       - "80"
-    volumes:
-      - .:/usr/share/nginx/html:ro
     environment:
       - SERVICE_FQDN_WEB=https://gameassetlab.me
       - SERVICE_URL_WEB=https://gameassetlab.me
